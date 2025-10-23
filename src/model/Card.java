@@ -17,77 +17,85 @@ package model;
  */
 public enum Card {
     // spades
-    /** Ace of spades */            BAS("BAS"),
-    /** Two of spades */            BA2("BA2"),
-    /** Three of spades */          BA3("BA3"),
-    /** Four of spades */           BA4("BA4"),
-    /** Five of spades */           BA5("BA5"),
-    /** Six of spades */            BA6("BA6"),
-    /** Seven of spades */          BA7("BA7"),
-    /** Eight of spades */          BA8("BA8"),
-    /** Nine of spades */           BA9("BA9"),
-    /** Ten of spades */            BAT("BAT"),
-    /** Jack of spades */           BAJ("BAJ"),
-    /** Queen of spades */          BAQ("BAQ"),
-    /** King of spades */           BAK("BAK"),
-    
+    /** Ace of spades */				BSA(CardSuite.SPADES, CardRank.ACE),
+    /** Two of spades */				BS2(CardSuite.SPADES, CardRank.TWO),
+    /** Three of spades */				BS3(CardSuite.SPADES, CardRank.THREE),
+    /** Four of spades */				BS4(CardSuite.SPADES, CardRank.FOUR),
+    /** Five of spades */				BS5(CardSuite.SPADES, CardRank.FIVE),
+    /** Six of spades */				BS6(CardSuite.SPADES, CardRank.SIX),
+    /** Seven of spades */				BS7(CardSuite.SPADES, CardRank.SEVEN),
+    /** Eight of spades */				BS8(CardSuite.SPADES, CardRank.EIGHT),
+    /** Nine of spades */				BS9(CardSuite.SPADES, CardRank.NINE),
+    /** Ten of spades */				BST(CardSuite.SPADES, CardRank.TEN),
+    /** Jack of spades */				BSJ(CardSuite.SPADES, CardRank.JACK),
+    /** Queen of spades */				BSQ(CardSuite.SPADES, CardRank.QUEEN),
+    /** King of spades */				BSK(CardSuite.SPADES, CardRank.KING),
+
     // diamonds
-    /** Ace of diamonds */            RDS("RDS"),
-    /** Two of diamonds */            RD2("RD2"),
-    /** Three of diamonds */          RD3("RD3"),
-    /** Four of diamonds */           RD4("RD4"),
-    /** Five of diamonds */           RD5("RD5"),
-    /** Six of diamonds */            RD6("RD6"),
-    /** Seven of diamonds */          RD7("RD7"),
-    /** Eight of diamonds */          RD8("RD8"),
-    /** Nine of diamonds */           RD9("RD9"),
-    /** Ten of diamonds */            RDT("RDT"),
-    /** Jack of diamonds */           RDJ("RDJ"),
-    /** Queen of diamonds */          RDQ("RDQ"),
-    /** King of diamonds */           RDK("RDK"),
+    /** Ace of diamonds */				RDA(CardSuite.DIAMONDS, CardRank.ACE),
+    /** Two of diamonds */				RD2(CardSuite.DIAMONDS, CardRank.TWO),
+    /** Three of diamonds */			RD3(CardSuite.DIAMONDS, CardRank.THREE),
+    /** Four of diamonds */				RD4(CardSuite.DIAMONDS, CardRank.FOUR),
+    /** Five of diamonds */				RD5(CardSuite.DIAMONDS, CardRank.FIVE),
+    /** Six of diamonds */				RD6(CardSuite.DIAMONDS, CardRank.SIX),
+    /** Seven of diamonds */			RD7(CardSuite.DIAMONDS, CardRank.SEVEN),
+    /** Eight of diamonds */			RD8(CardSuite.DIAMONDS, CardRank.EIGHT),
+    /** Nine of diamonds */				RD9(CardSuite.DIAMONDS, CardRank.NINE),
+    /** Ten of diamonds */				RDT(CardSuite.DIAMONDS, CardRank.TEN),
+    /** Jack of diamonds */				RDJ(CardSuite.DIAMONDS, CardRank.JACK),
+    /** Queen of diamonds */			RDQ(CardSuite.DIAMONDS, CardRank.QUEEN),
+    /** King of diamonds */				RDK(CardSuite.DIAMONDS, CardRank.KING),
     
     // clubs
-    /** Ace of clubs */            BCS("BCS"),
-    /** Two of clubs */            BC2("BC2"),
-    /** Three of clubs */          BC3("BC3"),
-    /** Four of clubs */           BC4("BC4"),
-    /** Five of clubs */           BC5("BC5"),
-    /** Six of clubs */            BC6("BC6"),
-    /** Seven of clubs */          BC7("BC7"),
-    /** Eight of clubs */          BC8("BC8"),
-    /** Nine of clubs */           BC9("BC9"),
-    /** Ten of clubs */            BCT("BCT"),
-    /** Jack of clubs */           BCJ("BCJ"),
-    /** Queen of clubs */          BCQ("BCQ"),
-    /** King of clubs */           BCK("BCK"),
-    
+    /** Ace of clubs */			    	BCA(CardSuite.CLUBS, CardRank.ACE),
+    /** Two of clubs */			    	BC2(CardSuite.CLUBS, CardRank.TWO),
+    /** Three of clubs */				BC3(CardSuite.CLUBS, CardRank.THREE),
+    /** Four of clubs */				BC4(CardSuite.CLUBS, CardRank.FOUR),
+    /** Five of clubs */				BC5(CardSuite.CLUBS, CardRank.FIVE),
+    /** Six of clubs */			    	BC6(CardSuite.CLUBS, CardRank.SIX),
+    /** Seven of clubs */				BC7(CardSuite.CLUBS, CardRank.SEVEN),
+    /** Eight of clubs */				BC8(CardSuite.CLUBS, CardRank.EIGHT),
+    /** Nine of clubs */				BC9(CardSuite.CLUBS, CardRank.NINE),
+    /** Ten of clubs */			    	BCT(CardSuite.CLUBS, CardRank.TEN),
+    /** Jack of clubs */				BCJ(CardSuite.CLUBS, CardRank.JACK),
+    /** Queen of clubs */				BCQ(CardSuite.CLUBS, CardRank.QUEEN),
+    /** King of clubs */				BCK(CardSuite.CLUBS, CardRank.KING),
+
     // hearts
-    /** Ace of hearts */            RHS("RHS"),
-    /** Two of hearts */            RH2("RH2"),
-    /** Three of hearts */          RH3("RH3"),
-    /** Four of hearts */           RH4("RH4"),
-    /** Five of hearts */           RH5("RH5"),
-    /** Six of hearts */            RH6("RH6"),
-    /** Seven of hearts */          RH7("RH7"),
-    /** Eight of hearts */          RH8("RH8"),
-    /** Nine of hearts */           RH9("RH9"),
-    /** Ten of hearts */            RHT("RHT"),
-    /** Jack of hearts */           RHJ("RHJ"),
-    /** Queen of hearts */          RHQ("RHQ"),
-    /** King of hearts */           RHK("RHK"),
-    ;
+    /** Ace of hearts */				RHA(CardSuite.HEARTS, CardRank.ACE),
+    /** Two of hearts */				RH2(CardSuite.HEARTS, CardRank.TWO),
+    /** Three of hearts */				RH3(CardSuite.HEARTS, CardRank.THREE),
+    /** Four of hearts */				RH4(CardSuite.HEARTS, CardRank.FOUR),
+    /** Five of hearts */				RH5(CardSuite.HEARTS, CardRank.FIVE),
+    /** Six of hearts */				RH6(CardSuite.HEARTS, CardRank.SIX),
+    /** Seven of hearts */				RH7(CardSuite.HEARTS, CardRank.SEVEN),
+    /** Eight of hearts */				RH8(CardSuite.HEARTS, CardRank.EIGHT),
+    /** Nine of hearts */				RH9(CardSuite.HEARTS, CardRank.NINE),
+    /** Ten of hearts */				RHT(CardSuite.HEARTS, CardRank.TEN),
+    /** Jack of hearts */				RHJ(CardSuite.HEARTS, CardRank.JACK),
+    /** Queen of hearts */				RHQ(CardSuite.HEARTS, CardRank.QUEEN),
+    /** King of hearts */				RHK(CardSuite.HEARTS, CardRank.KING);
 
-    private final String iFace;
-
-    Card(final String pFace) {
-        iFace = pFace;
+    
+    private final CardRank iRank;
+    private final CardSuite iSuite;
+    
+    Card(final CardSuite pSuite, final CardRank pRank) {
+        this.iSuite = pSuite;
+        this.iRank = pRank;
     }
 
     /**
-     * Gets the face value of the card.
-     * @return face value of this card
+     * Returns the value of the face card.
+     * @return 0 for aces, 11 for jacks, 12 for queens, 
+     * 13 for kings, and as-is for the rest.
      */
-    public String face() {
-        return iFace;
+    public CardRank rank() {
+        return this.iRank;
     }
+    
+    public CardSuite suite() {
+        return this.iSuite;
+    }
+
 }
