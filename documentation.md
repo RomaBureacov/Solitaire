@@ -23,6 +23,8 @@ repository.
 This project should exercise testing, lexical and grammar analysis,
 object-oriented programming, and command-line interface interaction.
 
+---
+
 # Specifications
 The program will be built in Java exclusively. The expected operating
 environment is described as follows:
@@ -44,6 +46,8 @@ The following will be used to develop this software:
 * Windows’s Command Line Interface
 * IntelliJ IDEA Ultimate
 * Windows 11
+
+---
 
 # Use Cases
 ## Start a game
@@ -216,13 +220,13 @@ There are 12 stack numbers in total and they are organized as follows:
 | Pile# | Description          |
 |-------|----------------------|
 | 0-6   | Board Stacks 0-6     |
-| 7     | Aces suite stack     |
+| 7     | Spades suite stack   |
 | 8     | Diamonds suite stack |
 | 9     | Clubs suite stack    |
 | 10    | Hearts suite stack   |
 | 11    | Hand                 |
 | 12    | Offhand              |
-| 13    | MainHand             |
+| 13    | StageHand            |
 
 
 #### DrawCard
@@ -261,12 +265,13 @@ Examines the board to see if it is possible to make a move that results in eithe
 * A card moving to one of the board columns from the hand
 
 This command will return a Boolean true if there is still a remaining move that
-can be made. Otherwise it will return a Boolean false.
+can be made based on the draw mode. Otherwise it will return a Boolean false.
 
-| Opcode | Arg1 | Arg2 |
-|--------|------|------|
-| 4      | N/A  | N/A  |
+| Opcode | Arg1     | Arg2 |
+|--------|----------|------|
+| 4      | DrawMode | N/A  |
 
+DrawMode can be referenced from the DrawCard command.
 
 #### GetStack
 Returns card arrays that correspond to specific piles.
@@ -282,9 +287,9 @@ Exits the game and the software.
 
 | Opcode | Arg1 | Arg2 |
 |--------|------|------|
-| 9      | N/A  | N/A  |
+| 6      | N/A  | N/A  |
 
-### The view
+### The view 
 This component will consist of the algorithms to write to the console output.
 It features the ability to query the game board and attain a buffer to write
 out to the console the new game state. Additionally, it will contain the means
