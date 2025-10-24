@@ -1,0 +1,12 @@
+card ::=                    CARD_COLOR CARD_SUITE CARD_RANK
+
+command ::=                 moveCardCommand | newGameCommand | resetHandCommand
+                                | helpCommand | exitCommand
+
+moveCardCommand ::=         MOVE_COMMAND (CARD_SUITE | STACK) (CARD_SUITE | STACK)
+newGameCommand ::=          NEWGAME_COMMAND
+resetHandCommand ::=        NEWHAND_COMMAND
+helpCommand ::=             HELP_COMMAND [DIGIT | COMMANDS | MOVE_COMMAND
+                                | NEWGAME_COMMAND | NEWHAND_COMMAND | EXIT_COMMAND]
+exitCommand ::=             EXIT_COMMAND
+

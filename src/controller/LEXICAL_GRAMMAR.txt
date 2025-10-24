@@ -1,0 +1,22 @@
+STACK ::=                   "0" ... "6"
+
+// words
+COMMANDS ::=                     "commands" | "c"
+
+// meta
+LETTER ::=                  "a" ... "z" | "A"..."Z"
+DIGIT ::=                   "0" ... "9"
+
+// card components
+CARD_COLOR ::=              "R" | "B"
+CARD_SUITE ::=              "S" | "D" | "C" | "H"
+CARD_RANK ::=               "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "T"
+                                | "J" | "Q" | "K"
+
+// commands
+MOVE_COMMAND ::=            "move" | "stack"
+NEWGAME_COMMAND ::=         "newgame" | "ng"
+NEWHAND_COMMAND ::=         "newhand" | "new" | "reset"
+HELP_COMMAND ::=            "help" | "?"
+EXIT_COMMAND ::=            "exit" | "q" | "quit"
+

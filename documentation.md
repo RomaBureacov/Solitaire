@@ -289,6 +289,21 @@ Exits the game and the software.
 |--------|------|------|
 | 6      | N/A  | N/A  |
 
+#### Help
+Returns a string object that represents help for the game.
+
+| Opcode | Arg1     | Arg2 |
+|--------|----------|------|
+| 7      | HelpMode | N/A  |
+
+The following codes return a respective help page in regard to the software:
+
+| HelpMode | Description           |
+|----------|-----------------------|
+| 0        | Command descriptions  |
+| 1        | How to play Solitaire |
+
+
 ### The view 
 This component will consist of the algorithms to write to the console output.
 It features the ability to query the game board and attain a buffer to write
