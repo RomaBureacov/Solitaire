@@ -11,7 +11,7 @@ public class IllegalSyntaxException extends Exception {
 
     @Override
     public String toString() {
-        return "Invalid syntax "
+        return "Invalid syntax at %d for %s".formatted(this.iLocation, this.iCommand);
     }
 
     /**
