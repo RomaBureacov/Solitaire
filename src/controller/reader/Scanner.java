@@ -85,9 +85,8 @@ public final class Scanner {
     private char peekChar() {
         final int lLength = this.iInput.length();
         if (this.iLocation >= lLength) return 0;
-        else if (this.iLocation + 1 >= lLength) return 0;
 
-        return this.iInput.charAt(this.iLocation + 1);
+        return this.iInput.charAt(this.iLocation);
     }
 
     /**
