@@ -11,7 +11,14 @@ public class IllegalSyntaxException extends Exception {
 
     @Override
     public String toString() {
-        return "Invalid syntax at %d for %s".formatted(this.iLocation, this.iCommand);
+        final String lMsg = "Invalid Syntax: ";
+        final int lPad = lMsg.length() + this.iLocation;
+        return """
+               Invalid syntax: %s
+               %*s
+               """
+                .stripIndent()
+                .formatted(this.iCommand, lPad, "^");
     }
 
     /**
