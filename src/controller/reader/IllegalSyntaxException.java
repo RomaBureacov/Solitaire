@@ -1,4 +1,4 @@
-package controller;
+package controller.reader;
 
 public class IllegalSyntaxException extends Exception {
     final int iLocation;
