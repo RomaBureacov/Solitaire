@@ -1,7 +1,7 @@
-STACK ::=                   "0" ... "6"
+STACK ::=                   "0" ... "6" | "S" | "D" | "H" | "C"
 
 // words
-COMMANDS ::=                     "commands" | "c"
+COMMANDS ::=                "commands" | "c"
 
 // meta
 LETTER ::=                  "a" ... "z" | "A"..."Z"
@@ -17,6 +17,6 @@ CARD_RANK ::=               "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" 
 MOVE_COMMAND ::=            "move" | "stack"
 NEWGAME_COMMAND ::=         "newgame" | "ng"
 NEWHAND_COMMAND ::=         "newhand" | "new" | "reset"
-HELP_COMMAND ::=            "help" | "?"
+HELP_COMMAND ::=            "help"
 EXIT_COMMAND ::=            "exit" | "q" | "quit"
 
